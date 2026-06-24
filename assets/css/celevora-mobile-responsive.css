@@ -1,0 +1,1102 @@
+/* =========================================================
+   CELEVORA — Mobile Responsive Overrides
+   Breakpoints:
+     xs:  < 480px
+     sm:  480px – 639px
+     md:  640px – 767px
+     lg:  768px – 1023px
+   All rules below are ADDITIONS / OVERRIDES layered on top
+   of the existing celevora stylesheet.
+   ========================================================= */
+
+/* ============================================================
+   GLOBAL HELPERS
+   ============================================================ */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================================
+   NAVBAR / HEADER
+   ============================================================ */
+@media (max-width: 1023px) {
+  .navbar {
+    height: 60px;
+    padding: 0 1rem;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
+  }
+
+  .logo-mark {
+    width: 30px;
+    height: 30px;
+    font-size: 0.85rem;
+  }
+
+  /* Show hamburger, hide desktop links */
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .icon-btn {
+    display: none;
+  }
+
+  .nav-right .btn {
+    display: none;
+  }
+
+  /* Show a compact icon-only action in nav-right */
+  .nav-right .btn-primary.btn-sm {
+    display: inline-flex;
+    padding: 0.45rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .nav-right .btn-primary.btn-sm {
+    display: none;
+  }
+}
+
+/* Mobile drawer full-height scroll */
+.mobile-drawer {
+  overflow-y: auto;
+}
+
+.mobile-drawer nav a {
+  font-size: 1rem;
+  padding: 0.85rem 0.75rem;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+@media (max-width: 1023px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 0;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .popular-searches {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    max-width: 320px;
+  }
+
+  .hero-stat-badge {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 639px) {
+  .hero-heading {
+    font-size: 2.1rem;
+  }
+
+  .hero-visual {
+    max-width: 260px;
+  }
+
+  .search-bar {
+    border-radius: var(--radius-lg);
+    padding: 0.5rem;
+  }
+
+  .hero-stat-badge {
+    position: static;
+    transform: none;
+    display: inline-flex;
+    margin: 1rem auto 0;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 479px) {
+  .hero-heading {
+    font-size: 1.85rem;
+  }
+
+  .hero-grid {
+    padding: 1.75rem 0;
+  }
+
+  .hero-sub {
+    font-size: 0.9rem;
+  }
+
+  .search-field input,
+  .search-field select {
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================================================
+   CATEGORIES
+   ============================================================ */
+@media (max-width: 479px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+
+  .category-card {
+    padding: 1.1rem 0.5rem;
+  }
+
+  .category-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .category-name {
+    font-size: 0.78rem;
+  }
+
+  .category-count {
+    font-size: 0.68rem;
+  }
+}
+
+/* ============================================================
+   SECTION HEADS
+   ============================================================ */
+@media (max-width: 639px) {
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.35rem;
+  }
+}
+
+/* ============================================================
+   SCROLL ROW — EVENT CARDS
+   ============================================================ */
+@media (max-width: 639px) {
+  .event-card {
+    width: 230px;
+  }
+
+  .event-card-title {
+    font-size: 0.9rem;
+  }
+
+  .event-meta-row {
+    font-size: 0.78rem;
+  }
+
+  .price-tag {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .event-card {
+    width: 210px;
+  }
+}
+
+/* ============================================================
+   VENDOR CARDS GRID
+   ============================================================ */
+@media (max-width: 639px) {
+  .vendors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .vendors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+
+  .vendor-card-name {
+    font-size: 0.8rem;
+  }
+
+  .vendor-card-meta {
+    font-size: 0.7rem;
+  }
+}
+
+/* ============================================================
+   VENUES GRID
+   ============================================================ */
+@media (max-width: 639px) {
+  .venues-grid {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .venues-section {
+    padding: 40px 0 70px;
+  }
+}
+
+/* ============================================================
+   WHY CHOOSE US
+   ============================================================ */
+@media (max-width: 639px) {
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .why-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+@media (max-width: 767px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.875rem;
+  }
+}
+
+/* ============================================================
+   NEWSLETTER
+   ============================================================ */
+@media (max-width: 639px) {
+  .newsletter-box {
+    padding: 2.25rem 1.1rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .newsletter-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .newsletter-box p {
+    font-size: 0.85rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+
+/* ============================================================
+   PAGE HEADER (inner pages)
+   ============================================================ */
+@media (max-width: 639px) {
+  .page-header {
+    padding: 1.75rem 0;
+  }
+
+  .page-title {
+    font-size: 1.55rem;
+  }
+
+  .page-desc {
+    font-size: 0.85rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.78rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 479px) {
+  .page-title {
+    font-size: 1.35rem;
+  }
+}
+
+/* ============================================================
+   FILTER SIDEBAR + LISTING LAYOUT
+   ============================================================ */
+@media (max-width: 1023px) {
+  .listing-layout {
+    grid-template-columns: 1fr;
+  }
+
+  /* Sidebar hidden by default on mobile — toggled by JS */
+  .filter-sidebar {
+    display: none;
+  }
+
+  .filter-sidebar.is-open {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    border-radius: 0;
+    overflow-y: auto;
+    background: var(--card);
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .listing-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .listing-grid.events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-toolbar {
+    gap: 0.5rem;
+  }
+
+  .results-count {
+    font-size: 0.8rem;
+  }
+
+  .pagination {
+    gap: 0.35rem;
+    flex-wrap: wrap;
+  }
+
+  .page-btn {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* ============================================================
+   DETAIL PAGES (Gallery / Layout)
+   ============================================================ */
+@media (max-width: 639px) {
+  .detail-gallery {
+    grid-template-columns: 1fr;
+    border-radius: var(--radius-lg);
+  }
+
+  .detail-gallery-main {
+    grid-column: span 1;
+    aspect-ratio: 16/9;
+  }
+
+  .detail-gallery-side {
+    display: none;
+  }
+
+  .detail-title {
+    font-size: 1.35rem;
+  }
+
+  .detail-head {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .detail-actions {
+    align-self: flex-start;
+  }
+
+  .detail-meta-pills {
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .detail-subheading {
+    font-size: 1.1rem;
+    margin-top: 1.75rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-card {
+    position: static;
+  }
+}
+
+/* Packages */
+@media (max-width: 639px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Gallery grid */
+@media (max-width: 479px) {
+  .detail-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================================
+   CHECKOUT / BOOKING FORM
+   ============================================================ */
+@media (max-width: 1023px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 639px) {
+  .form-control {
+    height: 2.5rem;
+    font-size: 0.85rem;
+  }
+
+  .payment-method {
+    padding: 0.7rem 0.85rem;
+  }
+
+  .payment-method-name {
+    font-size: 0.82rem;
+  }
+}
+
+/* ============================================================
+   AUTH PAGES (Login / Register)
+   ============================================================ */
+@media (max-width: 1023px) {
+  .login-wrapper,
+  .register-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .login-left,
+  .register-left {
+    text-align: center;
+  }
+
+  .login-left p,
+  .register-left p {
+    margin: 0 auto 1.5rem;
+  }
+
+  .login-features,
+  .register-benefits {
+    align-items: center;
+  }
+}
+
+@media (max-width: 639px) {
+  .login-section,
+  .register-section {
+    padding: 2.5rem 0;
+  }
+
+  .login-card,
+  .register-card {
+    padding: 1.5rem 1.1rem;
+    border-radius: 20px;
+  }
+
+  .login-left h1,
+  .register-left h1 {
+    font-size: 2rem;
+  }
+
+  .login-card h2,
+  .register-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .login-left h1,
+  .register-left h1 {
+    font-size: 1.75rem;
+  }
+
+  .login-btn,
+  .register-btn {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .form-group input {
+    padding: 12px 14px;
+  }
+}
+
+/* Auth wrap */
+@media (max-width: 639px) {
+  .auth-card {
+    padding: 1.5rem 1.1rem;
+  }
+
+  .auth-title {
+    font-size: 1.35rem;
+  }
+}
+
+/* ============================================================
+   DASHBOARD LAYOUT
+   ============================================================ */
+@media (max-width: 1023px) {
+  .dashboard-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-sidebar {
+    display: none;
+  }
+
+  /* Open state toggled via JS */
+  .dashboard-sidebar.is-open {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    width: 270px;
+    overflow-y: auto;
+    box-shadow: 4px 0 24px rgba(0,0,0,0.12);
+  }
+
+  .dashboard-main {
+    padding: 1.25rem 1rem 2.5rem;
+  }
+
+  .dashboard-topbar {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .stat-value {
+    font-size: 1.25rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  /* Table: enable horizontal scroll */
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 560px;
+  }
+
+  thead th,
+  tbody td {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+  }
+
+  .dashboard-heading h1 {
+    font-size: 1.15rem;
+  }
+}
+
+/* Form grids in dashboard */
+@media (max-width: 639px) {
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+@media (max-width: 1023px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .about-grid p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-image {
+    margin: 0 auto;
+    height: 280px;
+    font-size: 6rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-hero {
+    padding: 80px 0 60px;
+  }
+
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .about-story,
+  .about-stats,
+  .mission-section,
+  .why-us {
+    padding: 60px 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .stat-card {
+    padding: 25px 15px;
+  }
+
+  .stat-card h3 {
+    font-size: 2rem;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .why-card {
+    padding: 25px 18px;
+  }
+
+  .about-image {
+    height: 220px;
+    font-size: 4.5rem;
+  }
+
+  .about-grid h2,
+  .mission-section h2,
+  .why-us h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    height: 180px;
+    font-size: 3.5rem;
+  }
+
+  .mission-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* ============================================================
+   FAVOURITES PAGE
+   ============================================================ */
+@media (max-width: 1023px) {
+  .fav-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.1rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .fav-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .fav-card img {
+    height: 200px;
+  }
+
+  .fav-content {
+    padding: 18px;
+  }
+
+  .fav-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .fav-actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .fav-empty {
+    padding: 60px 1.25rem;
+  }
+
+  .fav-empty h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .page-header {
+    padding: 70px 0 40px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+}
+
+/* ============================================================
+   CART PAGE
+   ============================================================ */
+@media (max-width: 1023px) {
+  .cart-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cart-summary-card {
+    position: static;
+  }
+}
+
+@media (max-width: 639px) {
+  .cart-section {
+    padding: 40px 0 70px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.85rem;
+  }
+
+  .cart-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  .cart-item-content h3 {
+    font-size: 1rem;
+  }
+
+  .cart-item-meta {
+    gap: 0.75rem;
+    font-size: 0.82rem;
+  }
+
+  .cart-item-price {
+    font-size: 1.05rem;
+  }
+
+  .cart-summary-card {
+    padding: 1.25rem;
+    border-radius: 20px;
+  }
+
+  .cart-summary-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .cart-empty {
+    padding: 50px 1.25rem;
+  }
+
+  .cart-empty h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ============================================================
+   GENERIC CONTENT PAGES (Contact / FAQ / Pricing)
+   ============================================================ */
+@media (max-width: 1023px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .prose-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .prose-content p,
+  .prose-content li {
+    font-size: 0.875rem;
+  }
+
+  .faq-question {
+    font-size: 0.88rem;
+    padding: 1rem 0.1rem;
+  }
+
+  .faq-answer-inner {
+    font-size: 0.84rem;
+  }
+
+  .contact-info-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+}
+
+/* Pricing */
+@media (max-width: 767px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  .pricing-amount {
+    font-size: 2rem;
+  }
+}
+
+/* About stats */
+@media (max-width: 639px) {
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-stat {
+    padding: 1.1rem 0.75rem;
+  }
+
+  .about-stat .num {
+    font-size: 1.5rem;
+  }
+}
+
+/* Team */
+@media (max-width: 639px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .team-card {
+    padding: 1.1rem 0.5rem;
+  }
+
+  .team-card img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+@media (max-width: 1023px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 639px) {
+  .site-footer {
+    padding: 2.5rem 0 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-brand {
+    grid-column: span 1;
+  }
+
+  .footer-brand p {
+    font-size: 0.82rem;
+  }
+
+  .footer-col h4 {
+    font-size: 0.875rem;
+  }
+
+  .footer-col a {
+    font-size: 0.82rem;
+  }
+
+  .footer-bottom {
+    padding: 1.25rem 0;
+    gap: 0.75rem;
+  }
+
+  .footer-bottom-text {
+    font-size: 0.7rem;
+  }
+
+  .payment-icons span {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .footer-newsletter-form {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 479px) {
+  .footer-socials a {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* ============================================================
+   BUTTONS — prevent overflow on small screens
+   ============================================================ */
+@media (max-width: 479px) {
+  .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.65rem 1.25rem;
+  }
+}
+
+/* ============================================================
+   CUSTOM CURSOR — disable on touch devices
+   ============================================================ */
+@media (hover: none) and (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+
+  .rolling-cursor,
+  .custom-cursor,
+  .cursor-dot {
+    display: none !important;
+  }
+}
+
+/* ============================================================
+   SECTION SPACING — tighten on mobile
+   ============================================================ */
+@media (max-width: 639px) {
+  .section {
+    padding: 2.25rem 0;
+  }
+
+  .why-choose {
+    padding: 1.75rem 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .section {
+    padding: 1.75rem 0;
+  }
+}
+
+/* ============================================================
+   HERO VISUAL — dot grid adjustments
+   ============================================================ */
+@media (max-width: 639px) {
+  .dot-grid-1 {
+    left: -0.5rem;
+  }
+
+  .dot-grid-2 {
+    right: 0rem;
+  }
+}
+
+/* ============================================================
+   CONTAINER padding — a bit tighter on very small screens
+   ============================================================ */
+@media (max-width: 359px) {
+  .container {
+    padding: 0 0.85rem;
+  }
+}
