@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Celevora — Plan. Book. Celebrate.</title>
+<meta name="description" content="Celevora is your all-in-one platform to plan, book and manage unforgettable events. Discover trusted vendors, venues, and packages." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container navbar">
+    <div class="nav-left">
+      <button class="menu-toggle" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <a href="index.html" class="logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">Celevora</span>
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="vendors.html">Vendors</a>
+      <a href="venues.html">Venues</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-btn">Pages
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-right">
+      <a href="become-vendor.html" class="nav-vendor-btn">Become a Vendor</a>
+      <a href="favourites.html" class="icon-btn" aria-label="Favourites">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </a>
+      <a href="cart.html" class="icon-btn cart-icon-wrap" aria-label="Cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count-badge" style="display:none">0</span>
+      </a>
+      <a href="login.html" class="btn btn-primary">Login / Sign Up</a>
+    </div>
+  </div>
+</header>
+<!-- Mobile drawer -->
+<div class="mobile-drawer-overlay">
+  <div class="mobile-drawer">
+    <div class="mobile-drawer-head">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">Celevora</span>
+      </a>
+      <button class="mobile-drawer-close icon-btn" style="display:flex" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="vendors.html">Vendors</a>
+      <a href="venues.html">Venues</a>
+      <div class="mobile-drawer-divider"></div>
+      <a href="become-vendor.html">Become a Vendor</a>
+      <a href="favourites.html">Favourites</a>
+      <a href="cart.html">Cart</a>
+      <div class="mobile-drawer-divider"></div>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+    <a href="login.html" class="btn btn-primary btn-block">Login / Sign Up</a>
+  </div>
+</div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero bg-gradient-soft">
+    <div class="container hero-grid">
+      <div>
+        <h1 class="hero-heading">Plan. Book.<br><span class="text-gradient">Celebrate.</span></h1>
+        <p class="hero-sub">Celevora is your all-in-one platform to plan, book and manage unforgettable events with ease.</p>
+
+        <form class="search-bar" action="events.html" method="get">
+          <div class="search-field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" name="q" placeholder="Search events, vendors…" />
+          </div>
+          <div class="search-divider"></div>
+          <div class="search-field" style="max-width:170px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41 13.42 20.6a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1.5" fill="currentColor" stroke="none"/></svg>
+            <select name="category">
+              <option value="">Select Category</option>
+              <option>Wedding</option>
+              <option>Birthday</option>
+              <option>Corporate</option>
+              <option>Seminar</option>
+              <option>Concert</option>
+            </select>
+          </div>
+          <div class="search-divider"></div>
+          <div class="search-field" style="max-width:150px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <input type="text" name="location" placeholder="Location" />
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Search</button>
+        </form>
+
+        <div class="popular-searches">
+          <strong>Popular Searches:</strong>
+          <a href="events.html?category=wedding">Wedding</a>
+          <a href="events.html?category=birthday">Birthday</a>
+          <a href="events.html?category=corporate">Corporate</a>
+          <a href="events.html?category=concert">Concert</a>
+          <a href="events.html?category=seminar">Seminar</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-visual-bg"></div>
+        <div class="hero-visual-img">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=900&auto=format&fit=crop" alt="Elegant decorated wedding reception with floral centerpieces and string lighting" />
+        </div>
+        <div class="dot-grid dot-grid-1">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="dot-grid dot-grid-2">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="hero-stat-badge">
+          <div class="avatar-stack">
+            <img src="https://i.pravatar.cc/64?img=11" alt="" />
+            <img src="https://i.pravatar.cc/64?img=12" alt="" />
+            <img src="https://i.pravatar.cc/64?img=13" alt="" />
+          </div>
+          <div>
+            <p class="stat-number">10K+</p>
+            <p class="stat-label">Events Planned</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="section container">
+    <div class="section-head">
+      <h2 class="section-title">Explore Top <span class="text-gradient">Categories</span></h2>
+      <a href="events.html" class="view-all">View All</a>
+    </div>
+    <div class="categories-grid">
+      <a href="events.html?category=wedding" class="category-card card card-hover">
+        <span class="category-icon icon-pink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 21h19M3 18l9-12 9 12M9 18v-6a3 3 0 0 1 6 0v6"/></svg></span>
+        <span class="category-name">Wedding</span>
+        <span class="category-count">120+ Vendors</span>
+      </a>
+      <a href="events.html?category=birthday" class="category-card card card-hover">
+        <span class="category-icon icon-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8M4 11V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2M12 7V3m-3 4 3-4 3 4"/></svg></span>
+        <span class="category-name">Birthday</span>
+        <span class="category-count">86+ Vendors</span>
+      </a>
+      <a href="events.html?category=corporate" class="category-card card card-hover">
+        <span class="category-icon icon-violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+        <span class="category-name">Corporate</span>
+        <span class="category-count">95+ Vendors</span>
+      </a>
+      <a href="events.html?category=seminar" class="category-card card card-hover">
+        <span class="category-icon icon-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <span class="category-name">Seminar</span>
+        <span class="category-count">60+ Vendors</span>
+      </a>
+      <a href="events.html?category=concert" class="category-card card card-hover">
+        <span class="category-icon icon-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+        <span class="category-name">Concert</span>
+        <span class="category-count">75+ Vendors</span>
+      </a>
+      <a href="events.html?category=anniversary" class="category-card card card-hover">
+        <span class="category-icon icon-rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+        <span class="category-name">Anniversary</span>
+        <span class="category-count">50+ Vendors</span>
+      </a>
+      <a href="events.html" class="category-card card card-hover">
+        <span class="category-icon icon-muted"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg></span>
+        <span class="category-name">More</span>
+        <span class="category-count">View All</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED EVENTS ============ -->
+  <section class="section container">
+    <div class="section-head">
+      <h2 class="section-title">Featured Events</h2>
+      <a href="events.html" class="view-all">View All Events</a>
+    </div>
+    <div class="scroll-row-wrap">
+      <button class="scroll-arrow scroll-arrow-left" aria-label="Scroll left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <div class="scroll-row">
+
+        <div class="event-card card card-hover">
+          <div class="event-card-img">
+            <a href="event-details.html"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop" alt="Dream Wedding decor"></a>
+            <span class="badge badge-featured card-badge-top-left">Featured</span>
+            <button class="fav-btn" data-id="evt-1" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="event-card-body">
+            <h3 class="event-card-title">Dream Wedding</h3>
+            <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><strong>4.8</strong> (100)</div>
+            <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Dhaka, Bangladesh</div>
+            <div class="event-card-footer">
+              <a href="event-details.html" class="btn btn-primary btn-sm">Book Now</a>
+              <span class="price-tag">৳4,999</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card card card-hover">
+          <div class="event-card-img">
+            <a href="event-details.html"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop" alt="Corporate Meet 2026 conference hall"></a>
+            <button class="fav-btn" data-id="evt-2" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="event-card-body">
+            <h3 class="event-card-title">Corporate Meet 2026</h3>
+            <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><strong>4.6</strong> (98)</div>
+            <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Dhaka, Bangladesh</div>
+            <div class="event-card-footer">
+              <a href="event-details.html" class="btn btn-primary btn-sm">Book Now</a>
+              <span class="price-tag">৳1,199</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card card card-hover">
+          <div class="event-card-img">
+            <a href="event-details.html"><img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=800&auto=format&fit=crop" alt="Rock Concert Live stage lighting"></a>
+            <button class="fav-btn" data-id="evt-3" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="event-card-body">
+            <h3 class="event-card-title">Rock Concert Live</h3>
+            <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><strong>4.7</strong> (78)</div>
+            <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Dhaka, Bangladesh</div>
+            <div class="event-card-footer">
+              <a href="event-details.html" class="btn btn-primary btn-sm">Book Now</a>
+              <span class="price-tag">৳699</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card card card-hover">
+          <div class="event-card-img">
+            <a href="event-details.html"><img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=800&auto=format&fit=crop" alt="Birthday Party celebration"></a>
+            <button class="fav-btn" data-id="evt-4" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="event-card-body">
+            <h3 class="event-card-title">Birthday Party</h3>
+            <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><strong>4.5</strong> (64)</div>
+            <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Chattogram, BD</div>
+            <div class="event-card-footer">
+              <a href="event-details.html" class="btn btn-primary btn-sm">Book Now</a>
+              <span class="price-tag">৳499</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card card card-hover">
+          <div class="event-card-img">
+            <a href="event-details.html"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop" alt="Garden Anniversary Gala setup"></a>
+            <button class="fav-btn" data-id="evt-5" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="event-card-body">
+            <h3 class="event-card-title">Garden Anniversary Gala</h3>
+            <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><strong>4.9</strong> (52)</div>
+            <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Sylhet, Bangladesh</div>
+            <div class="event-card-footer">
+              <a href="event-details.html" class="btn btn-primary btn-sm">Book Now</a>
+              <span class="price-tag">৳1,899</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="scroll-arrow scroll-arrow-right" aria-label="Scroll right"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+  </section>
+
+  <!-- ============ POPULAR VENDORS ============ -->
+  <section class="section container">
+    <div class="section-head">
+      <h2 class="section-title">Popular Vendors</h2>
+      <a href="vendors.html" class="view-all">View All Vendors</a>
+    </div>
+    <div class="vendors-grid">
+
+      <a href="vendor-details.html" class="vendor-card card-hover">
+        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=600&auto=format&fit=crop" alt="Royal Decor Studio setup">
+        <div class="vendor-card-overlay"></div>
+        <button class="fav-btn" data-id="ven-1" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        <div class="vendor-card-info">
+          <p class="vendor-card-name">Royal Decor Studio</p>
+          <div class="vendor-card-meta"><span>Decorator</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.8</span></div>
+        </div>
+      </a>
+
+      <a href="vendor-details.html" class="vendor-card card-hover">
+        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=600&auto=format&fit=crop" alt="Spice Route Catering presentation">
+        <div class="vendor-card-overlay"></div>
+        <button class="fav-btn" data-id="ven-2" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        <div class="vendor-card-info">
+          <p class="vendor-card-name">Spice Route Catering</p>
+          <div class="vendor-card-meta"><span>Caterer</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.6</span></div>
+        </div>
+      </a>
+
+      <a href="vendor-details.html" class="vendor-card card-hover">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop" alt="Lumiere Events lighting design">
+        <div class="vendor-card-overlay"></div>
+        <button class="fav-btn" data-id="ven-3" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        <div class="vendor-card-info">
+          <p class="vendor-card-name">Lumiere Events</p>
+          <div class="vendor-card-meta"><span>Lighting &amp; Sound</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.7</span></div>
+        </div>
+      </a>
+
+      <a href="vendor-details.html" class="vendor-card card-hover">
+        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=600&auto=format&fit=crop" alt="Harmony Live Band performance">
+        <div class="vendor-card-overlay"></div>
+        <button class="fav-btn" data-id="ven-4" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        <div class="vendor-card-info">
+          <p class="vendor-card-name">Harmony Live Band</p>
+          <div class="vendor-card-meta"><span>Entertainment</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.5</span></div>
+        </div>
+      </a>
+
+      <a href="vendor-details.html" class="vendor-card card-hover">
+        <img src="https://images.unsplash.com/photo-1500840216050-6ffa99d75160?q=80&w=600&auto=format&fit=crop" alt="Frame and Flash Photography portfolio">
+        <div class="vendor-card-overlay"></div>
+        <button class="fav-btn" data-id="ven-5" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        <div class="vendor-card-info">
+          <p class="vendor-card-name">Frame &amp; Flash Photography</p>
+          <div class="vendor-card-meta"><span>Photographer</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.9</span></div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="why-choose">
+    <div class="container why-grid">
+      <div class="why-item">
+        <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+        <div><p class="why-title">Trusted Vendors</p><p class="why-desc">Verified &amp; top rated</p></div>
+      </div>
+      <div class="why-item">
+        <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
+        <div><p class="why-title">Easy Booking</p><p class="why-desc">Book in seconds</p></div>
+      </div>
+      <div class="why-item">
+        <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+        <div><p class="why-title">Secure Payments</p><p class="why-desc">Multiple options</p></div>
+      </div>
+      <div class="why-item">
+        <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11a9 9 0 0 1 18 0v6a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3M3 11v6a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3"/></svg></span>
+        <div><p class="why-title">24/7 Support</p><p class="why-desc">We are here to help</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section container">
+    <div style="text-align:center;max-width:34rem;margin:0 auto 2.5rem">
+      <h2 class="section-title">What Our <span class="text-gradient">Customers Say</span></h2>
+      <p style="margin-top:.6rem;color:var(--muted-fg);font-size:.9rem">Real stories from people who planned unforgettable events with Celevora.</p>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card card">
+        <svg class="testimonial-quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5S6.5 19 9.5 19c1 0 1.93-.27 2.73-.74L9.5 24l3.3-3.91A5.5 5.5 0 0 0 15 13.5C15 10.5 12.5 8 9.5 8zm10 0c-3 0-5.5 2.5-5.5 5.5S16.5 19 19.5 19c1 0 1.93-.27 2.73-.74L19.5 24l3.3-3.91A5.5 5.5 0 0 0 25 13.5C25 10.5 22.5 8 19.5 8z" transform="translate(-3.5 -8)"/></svg>
+        <p class="testimonial-text">Celevora made our wedding planning completely stress-free. Every vendor we booked showed up exactly on time and exceeded expectations.</p>
+        <div class="testimonial-footer">
+          <img src="https://i.pravatar.cc/100?img=47" alt="Nusrat Jahan">
+          <div><p class="testimonial-name">Nusrat Jahan</p><p class="testimonial-role">Bride, Dhaka</p></div>
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card card">
+        <svg class="testimonial-quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5S6.5 19 9.5 19c1 0 1.93-.27 2.73-.74L9.5 24l3.3-3.91A5.5 5.5 0 0 0 15 13.5C15 10.5 12.5 8 9.5 8zm10 0c-3 0-5.5 2.5-5.5 5.5S16.5 19 19.5 19c1 0 1.93-.27 2.73-.74L19.5 24l3.3-3.91A5.5 5.5 0 0 0 25 13.5C25 10.5 22.5 8 19.5 8z" transform="translate(-3.5 -8)"/></svg>
+        <p class="testimonial-text">We organized our annual corporate event through Celevora. The booking flow and vendor communication tools saved us hours of back and forth.</p>
+        <div class="testimonial-footer">
+          <img src="https://i.pravatar.cc/100?img=12" alt="Tanvir Ahmed">
+          <div><p class="testimonial-name">Tanvir Ahmed</p><p class="testimonial-role">Event Manager, BrightCorp</p></div>
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card card">
+        <svg class="testimonial-quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5S6.5 19 9.5 19c1 0 1.93-.27 2.73-.74L9.5 24l3.3-3.91A5.5 5.5 0 0 0 15 13.5C15 10.5 12.5 8 9.5 8zm10 0c-3 0-5.5 2.5-5.5 5.5S16.5 19 19.5 19c1 0 1.93-.27 2.73-.74L19.5 24l3.3-3.91A5.5 5.5 0 0 0 25 13.5C25 10.5 22.5 8 19.5 8z" transform="translate(-3.5 -8)"/></svg>
+        <p class="testimonial-text">Found an amazing decorator and caterer within minutes. The pricing was transparent and the reviews were spot on.</p>
+        <div class="testimonial-footer">
+          <img src="https://i.pravatar.cc/100?img=32" alt="Farzana Karim">
+          <div><p class="testimonial-name">Farzana Karim</p><p class="testimonial-role">Birthday Host, Chattogram</p></div>
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="empty" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="section container">
+    <div class="newsletter-box">
+      <h2>Never Miss an Update</h2>
+      <p>Subscribe for new vendor drops, seasonal offers, and event planning tips.</p>
+      <form class="newsletter-form" data-demo-form data-success-message="You're subscribed! Watch your inbox for updates.">
+        <input type="email" required placeholder="Enter your email" />
+        <button type="submit" class="btn btn-white">Subscribe</button>
+      </form>
+      <p data-form-feedback style="display:none;margin-top:.85rem;color:#fff;font-weight:600;font-size:.85rem"></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">C</span>
+          <span class="logo-text" style="color:#fff">Celevora</span>
+        </a>
+        <p>Celevora is your all-in-one event management platform. Plan, book &amp; celebrate unforgettable events with ease.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.46.66.25 1.22.6 1.77 1.15.5.5.86 1.06 1.15 1.77.24.64.41 1.37.46 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.46 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.24-1.37.41-2.43.46-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.46a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.24-.64-.41-1.37-.46-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.46-2.43.25-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.44 2.5c.64-.24 1.37-.41 2.43-.46C8.94 2.01 9.28 2 12 2Zm0 5.27a4.73 4.73 0 1 0 0 9.46 4.73 4.73 0 0 0 0-9.46Zm0 7.78a3.05 3.05 0 1 1 0-6.1 3.05 3.05 0 0 1 0 6.1Zm5.5-7.97a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0Z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 9.6H5.67V18.3h2.67V9.6ZM7 5.5a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1Zm11.3 7.05c0-2.32-1.48-3.39-3.45-3.39-1.59 0-2.3.88-2.7 1.5v-1.26H9.5v8.9h2.67v-4.97c0-1.3.25-2.56 1.86-2.56 1.59 0 1.61 1.48 1.61 2.64v4.89h2.67v-5.75Z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.94 3h3.07l-6.7 7.66L22 21h-6.16l-4.82-6.3L5.5 21H2.42l7.17-8.19L2 3h6.32l4.36 5.76L17.94 3Zm-1.08 16.17h1.7L7.24 4.74H5.4l11.46 14.43Z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="vendors.html">Vendors</a></li>
+          <li><a href="venues.html">Venues</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>For Vendors</h4>
+        <ul>
+          <li><a href="vendor-register.html">Become a Vendor</a></li>
+          <li><a href="vendor-dashboard.html">Vendor Dashboard</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">Help Center</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>Subscribe Newsletter</h4>
+        <p>Get the latest updates and offers from Celevora.</p>
+        <form class="footer-newsletter-form" data-demo-form data-success-message="Subscribed!">
+          <input type="email" required placeholder="Enter your email" />
+          <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-bottom-text">© 2026 Celevora. All rights reserved.</p>
+      <div class="payment-icons">
+        <span>VISA</span><span>Mastercard</span><span>bKash</span><span>Nagad</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

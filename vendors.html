@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Browse Vendors | Celevora</title>
+<meta name="description" content="Verified decorators, caterers, photographers and more, rated by real customers." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container navbar">
+    <div class="nav-left">
+      <button class="menu-toggle" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <a href="index.html" class="logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">Celevora</span>
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="vendors.html">Vendors</a>
+      <a href="venues.html">Venues</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-btn">Pages
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-right">
+      <a href="become-vendor.html" class="nav-vendor-btn">Become a Vendor</a>
+      <a href="favourites.html" class="icon-btn" aria-label="Favourites">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </a>
+      <a href="cart.html" class="icon-btn cart-icon-wrap" aria-label="Cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count-badge" style="display:none">0</span>
+      </a>
+      <a href="login.html" class="btn btn-primary">Login / Sign Up</a>
+    </div>
+  </div>
+</header>
+<!-- Mobile drawer -->
+<div class="mobile-drawer-overlay">
+  <div class="mobile-drawer">
+    <div class="mobile-drawer-head">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">Celevora</span>
+      </a>
+      <button class="mobile-drawer-close icon-btn" style="display:flex" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="vendors.html">Vendors</a>
+      <a href="venues.html">Venues</a>
+      <div class="mobile-drawer-divider"></div>
+      <a href="become-vendor.html">Become a Vendor</a>
+      <a href="favourites.html">Favourites</a>
+      <a href="cart.html">Cart</a>
+      <div class="mobile-drawer-divider"></div>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+    <a href="login.html" class="btn btn-primary btn-block">Login / Sign Up</a>
+  </div>
+</div>
+
+<main>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>Vendors</span>
+      </div>
+      <h1 class="page-title">Browse Vendors</h1>
+      <p class="page-desc">Verified decorators, caterers, photographers and more — rated by real customers.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="filters-toolbar">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search vendors…" data-search-input />
+      </div>
+      <button class="mobile-filter-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+        Filters
+      </button>
+    </div>
+
+    <div class="listing-layout">
+      <aside class="filter-sidebar card">
+        <div class="filter-sidebar-head">
+          <h3>Filters</h3>
+          <button class="filter-reset">Reset All</button>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-group-label">Vendor Type</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-vendortype value="Decorator"> Decorator</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-vendortype value="Caterer"> Caterer</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-vendortype value="Photographer"> Photographer</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-vendortype value="Entertainment"> Entertainment</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-vendortype value="Lighting & Sound"> Lighting &amp; Sound</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-vendortype value="Venue"> Venue</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-vendortype value="Planner"> Planner</label>
+        </div>
+
+        <div class="filter-group" style="margin-bottom:0">
+          <label class="filter-group-label">Minimum Rating</label>
+          <div class="star-filter">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+      </aside>
+
+      <div>
+        <p class="results-count"><strong data-results-count>8</strong> vendors found</p>
+
+        <div class="listing-grid vendors-grid-cols">
+
+          <a href="vendor-details.html" class="vendor-card card-hover" data-search-item="royal decor studio" data-vendor-type="Decorator">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=600&auto=format&fit=crop" alt="Royal Decor Studio setup">
+            <div class="vendor-card-overlay"></div>
+            <button class="fav-btn" data-id="ven-1" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="vendor-card-info">
+              <p class="vendor-card-name">Royal Decor Studio</p>
+              <div class="vendor-card-meta"><span>Decorator</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.8</span></div>
+            </div>
+          </a>
+
+          <a href="vendor-details.html" class="vendor-card card-hover" data-search-item="spice route catering" data-vendor-type="Caterer">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=600&auto=format&fit=crop" alt="Spice Route Catering presentation">
+            <div class="vendor-card-overlay"></div>
+            <button class="fav-btn" data-id="ven-2" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="vendor-card-info">
+              <p class="vendor-card-name">Spice Route Catering</p>
+              <div class="vendor-card-meta"><span>Caterer</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.6</span></div>
+            </div>
+          </a>
+
+          <a href="vendor-details.html" class="vendor-card card-hover" data-search-item="lumiere events" data-vendor-type="Lighting & Sound">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop" alt="Lumiere Events lighting design">
+            <div class="vendor-card-overlay"></div>
+            <button class="fav-btn" data-id="ven-3" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="vendor-card-info">
+              <p class="vendor-card-name">Lumiere Events</p>
+              <div class="vendor-card-meta"><span>Lighting &amp; Sound</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.7</span></div>
+            </div>
+          </a>
+
+          <a href="vendor-details.html" class="vendor-card card-hover" data-search-item="harmony live band" data-vendor-type="Entertainment">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=600&auto=format&fit=crop" alt="Harmony Live Band performance">
+            <div class="vendor-card-overlay"></div>
+            <button class="fav-btn" data-id="ven-4" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="vendor-card-info">
+              <p class="vendor-card-name">Harmony Live Band</p>
+              <div class="vendor-card-meta"><span>Entertainment</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.5</span></div>
+            </div>
+          </a>
+
+          <a href="vendor-details.html" class="vendor-card card-hover" data-search-item="frame and flash photography" data-vendor-type="Photographer">
+            <img src="https://images.unsplash.com/photo-1500840216050-6ffa99d75160?q=80&w=600&auto=format&fit=crop" alt="Frame and Flash Photography portfolio">
+            <div class="vendor-card-overlay"></div>
+            <button class="fav-btn" data-id="ven-5" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="vendor-card-info">
+              <p class="vendor-card-name">Frame &amp; Flash Photography</p>
+              <div class="vendor-card-meta"><span>Photographer</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.9</span></div>
+            </div>
+          </a>
+
+          <a href="vendor-details.html" class="vendor-card card-hover" data-search-item="elegant affairs planning" data-vendor-type="Planner">
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=600&auto=format&fit=crop" alt="Elegant Affairs Planning team at work">
+            <div class="vendor-card-overlay"></div>
+            <button class="fav-btn" data-id="ven-6" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="vendor-card-info">
+              <p class="vendor-card-name">Elegant Affairs Planning</p>
+              <div class="vendor-card-meta"><span>Planner</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.7</span></div>
+            </div>
+          </a>
+
+          <a href="vendor-details.html" class="vendor-card card-hover" data-search-item="sweet bites bakery" data-vendor-type="Caterer">
+            <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=600&auto=format&fit=crop" alt="Sweet Bites Bakery display">
+            <div class="vendor-card-overlay"></div>
+            <button class="fav-btn" data-id="ven-7" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="vendor-card-info">
+              <p class="vendor-card-name">Sweet Bites Bakery</p>
+              <div class="vendor-card-meta"><span>Caterer</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.5</span></div>
+            </div>
+          </a>
+
+          <a href="vendor-details.html" class="vendor-card card-hover" data-search-item="grand pavilion venues" data-vendor-type="Venue">
+            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=600&auto=format&fit=crop" alt="Grand Pavilion Venues interior">
+            <div class="vendor-card-overlay"></div>
+            <button class="fav-btn" data-id="ven-8" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="vendor-card-info">
+              <p class="vendor-card-name">Grand Pavilion Venues</p>
+              <div class="vendor-card-meta"><span>Venue</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.8</span></div>
+            </div>
+          </a>
+
+
+          <a href="vendor-details.html" class="vendor-card card-hover" data-search-item="blooms n petals florist" data-vendor-type="Florist">
+            <img src="https://images.unsplash.com/photo-1487530811015-780f47f86988?q=80&w=600&auto=format&fit=crop" alt="Blooms N Petals arrangement">
+            <div class="vendor-card-overlay"></div>
+            <button class="fav-btn" data-id="ven-9" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="vendor-card-info">
+              <p class="vendor-card-name">Blooms &amp; Petals</p>
+              <div class="vendor-card-meta"><span>Florist</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.7</span></div>
+            </div>
+          </a>
+
+          <a href="vendor-details.html" class="vendor-card card-hover" data-search-item="cinematic vision films" data-vendor-type="Videographer">
+            <img src="https://images.unsplash.com/photo-1601506521793-dc748fc80b67?q=80&w=600&auto=format&fit=crop" alt="Cinematic Vision filming">
+            <div class="vendor-card-overlay"></div>
+            <button class="fav-btn" data-id="ven-10" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="vendor-card-info">
+              <p class="vendor-card-name">Cinematic Vision Films</p>
+              <div class="vendor-card-meta"><span>Videographer</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.9</span></div>
+            </div>
+          </a>
+
+          <a href="vendor-details.html" class="vendor-card card-hover" data-search-item="glow & glam beauty" data-vendor-type="Beauty & Makeup">
+            <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?q=80&w=600&auto=format&fit=crop" alt="Glow Glam Beauty studio">
+            <div class="vendor-card-overlay"></div>
+            <button class="fav-btn" data-id="ven-11" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="vendor-card-info">
+              <p class="vendor-card-name">Glow &amp; Glam Beauty</p>
+              <div class="vendor-card-meta"><span>Beauty &amp; Makeup</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.8</span></div>
+            </div>
+          </a>
+
+          <a href="vendor-details.html" class="vendor-card card-hover" data-search-item="transpro event rides" data-vendor-type="Transport">
+            <img src="https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?q=80&w=600&auto=format&fit=crop" alt="TransPro event fleet">
+            <div class="vendor-card-overlay"></div>
+            <button class="fav-btn" data-id="ven-12" aria-label="Save to wishlist" style="position:absolute;top:.75rem;right:.75rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="vendor-card-info">
+              <p class="vendor-card-name">TransPro Event Rides</p>
+              <div class="vendor-card-meta"><span>Transport</span><span class="vendor-card-rating"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.4</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mobile-drawer-overlay mobile-filter-overlay">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-head">
+        <h3 style="font-family:var(--font-display);font-weight:700;font-size:1.1rem">Filters</h3>
+        <button class="filter-drawer-close icon-btn" style="display:flex" aria-label="Close filters">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <aside class="filter-sidebar mobile-only" style="border:none;box-shadow:none;padding:0">
+        <div class="filter-group">
+          <label class="filter-group-label">Vendor Type</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-vendortype value="Decorator"> Decorator</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-vendortype value="Caterer"> Caterer</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-vendortype value="Photographer"> Photographer</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-vendortype value="Entertainment"> Entertainment</label>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">C</span>
+          <span class="logo-text" style="color:#fff">Celevora</span>
+        </a>
+        <p>Celevora is your all-in-one event management platform. Plan, book &amp; celebrate unforgettable events with ease.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.46.66.25 1.22.6 1.77 1.15.5.5.86 1.06 1.15 1.77.24.64.41 1.37.46 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.46 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.24-1.37.41-2.43.46-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.46a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.24-.64-.41-1.37-.46-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.46-2.43.25-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.44 2.5c.64-.24 1.37-.41 2.43-.46C8.94 2.01 9.28 2 12 2Zm0 5.27a4.73 4.73 0 1 0 0 9.46 4.73 4.73 0 0 0 0-9.46Zm0 7.78a3.05 3.05 0 1 1 0-6.1 3.05 3.05 0 0 1 0 6.1Zm5.5-7.97a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0Z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 9.6H5.67V18.3h2.67V9.6ZM7 5.5a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1Zm11.3 7.05c0-2.32-1.48-3.39-3.45-3.39-1.59 0-2.3.88-2.7 1.5v-1.26H9.5v8.9h2.67v-4.97c0-1.3.25-2.56 1.86-2.56 1.59 0 1.61 1.48 1.61 2.64v4.89h2.67v-5.75Z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.94 3h3.07l-6.7 7.66L22 21h-6.16l-4.82-6.3L5.5 21H2.42l7.17-8.19L2 3h6.32l4.36 5.76L17.94 3Zm-1.08 16.17h1.7L7.24 4.74H5.4l11.46 14.43Z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="vendors.html">Vendors</a></li>
+          <li><a href="venues.html">Venues</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>For Vendors</h4>
+        <ul>
+          <li><a href="vendor-register.html">Become a Vendor</a></li>
+          <li><a href="vendor-dashboard.html">Vendor Dashboard</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">Help Center</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>Subscribe Newsletter</h4>
+        <p>Get the latest updates and offers from Celevora.</p>
+        <form class="footer-newsletter-form" data-demo-form data-success-message="Subscribed!">
+          <input type="email" required placeholder="Enter your email" />
+          <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-bottom-text">© 2026 Celevora. All rights reserved.</p>
+      <div class="payment-icons">
+        <span>VISA</span><span>Mastercard</span><span>bKash</span><span>Nagad</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
