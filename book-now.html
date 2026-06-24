@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Event | Celevora</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">C</span>
+            <span class="logo-text">Celevora</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="vendors.html">Vendors</a>
+            <a href="venues.html">Venues</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="booking-hero">
+    <div class="container">
+        <h1>Book Your Event</h1>
+        <p>Fill in your details and we'll contact you shortly.</p>
+    </div>
+</section>
+
+<section class="booking-section">
+
+    <div class="container">
+
+        <div class="booking-card">
+
+            <form class="booking-form">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" required>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Event Type</label>
+                        <select required>
+                            <option value="">Select Event</option>
+                            <option>Wedding</option>
+                            <option>Birthday Party</option>
+                            <option>Corporate Event</option>
+                            <option>Seminar</option>
+                            <option>Concert</option>
+                            <option>Anniversary</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Event Date</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Expected Guests</label>
+                        <input type="number" required>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label>Venue Location</label>
+                    <input type="text" placeholder="City or Venue Name">
+                </div>
+
+                <div class="form-group">
+                    <label>Budget Range (৳)</label>
+                    <select>
+                        <option>Below 50,000</option>
+                        <option>50,000 - 100,000</option>
+                        <option>100,000 - 250,000</option>
+                        <option>250,000 - 500,000</option>
+                        <option>500,000+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Additional Requirements</label>
+                    <textarea rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary booking-btn">
+                    Submit Booking Request
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <p>© 2026 Celevora. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

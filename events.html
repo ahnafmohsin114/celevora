@@ -1,202 +1,290 @@
 <main>
+  <header class="site-header">
+    <div class="container navbar">
 
-<section class="page-hero">
-  <div class="container">
-    <h1>Discover Amazing Events</h1>
-    <p>Find and book the perfect event experience for every occasion.</p>
-  </div>
-</section>
-<link rel="stylesheet" href="assets/css/style.css">
-<!-- ============ HEADER ============ -->
-<header class="site-header">
-  <div class="container navbar">
-    <div class="nav-left">
-      <button class="menu-toggle" aria-label="Open menu">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
-      <a href="index.html" class="logo">
-        <span class="logo-mark">C</span>
-        <span class="logo-text">Celevora</span>
-      </a>
-    </div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="events.html">Events</a>
-      <a href="vendors.html">Vendors</a>
-      <a href="venues.html">Venues</a>
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-btn">Pages
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="nav-dropdown-menu">
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="faq.html">FAQ</a>
-          <a href="terms.html">Terms &amp; Conditions</a>
-          <a href="privacy.html">Privacy Policy</a>
+        <div class="nav-left">
+            <button class="menu-toggle" aria-label="Open menu">
+                ☰
+            </button>
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">C</span>
+                <span class="logo-text">Celevora</span>
+            </a>
         </div>
-      </div>
-    </nav>
-    <div class="nav-right">
-      <a href="become-vendor.html" class="nav-vendor-btn">Become a Vendor</a>
-      <a href="favourites.html" class="icon-btn" aria-label="Favourites">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-      </a>
-      <a href="cart.html" class="icon-btn cart-icon-wrap" aria-label="Cart">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-        <span class="cart-count-badge" style="display:none">0</span>
-      </a>
-      <a href="login.html" class="btn btn-primary">Login / Sign Up</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="vendors.html">Vendors</a>
+            <a href="venues.html">Venues</a>
+
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-btn">
+                    Pages ▼
+                </button>
+
+                <div class="nav-dropdown-menu">
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Create Account</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="favourites.html">Favourites</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav-right">
+            <a href="favourites.html" class="icon-btn">❤</a>
+
+            <a href="cart.html" class="icon-btn">🛒</a>
+
+            <a href="login.html" class="btn btn-outline">
+                Login
+            </a>
+
+            <a href="register.html" class="btn btn-primary">
+                Sign Up
+            </a>
+        </div>
+
     </div>
-  </div>
 </header>
 
-<section class="events-section">
-  <div class="container">
-
-    <div class="events-grid">
-
-      <!-- Event 1 -->
-      <div class="event-card" data-category="Wedding">
-        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800" alt="Wedding">
-        <div class="event-content">
-          <span class="event-category">Wedding</span>
-          <h3>Royal Garden Wedding</h3>
-          <p>Luxury outdoor wedding with floral decoration, live music and premium catering.</p>
-          <ul>
-            <li>📍 Sylhet</li>
-            <li>📅 18 July 2026</li>
-            <li>👥 500 Guests</li>
-            <li>💰 ৳250,000</li>
-          </ul>
-          <a href="#" class="btn btn-primary">View Details</a>
-        </div>
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>Events</span>
       </div>
+      <head>
+  <link rel="stylesheet" href="assets/css/style.css">
+      </head>
+      <h1 class="page-title">Browse Events</h1>
+      <p class="page-desc">Discover curated weddings, corporate events, concerts and more — ready to book.</p>
+    </div>
+  </section>
 
-      <!-- Event 2 -->
-      <div class="event-card" data-category="Birthday">
-        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800" alt="Birthday">
-        <div class="event-content">
-          <span class="event-category">Birthday</span>
-          <h3>Kids Fun Birthday Party</h3>
-          <p>Magic show, games, mascot appearance and custom birthday decoration.</p>
-          <ul>
-            <li>📍 Dhaka</li>
-            <li>📅 22 July 2026</li>
-            <li>👥 100 Guests</li>
-            <li>💰 ৳45,000</li>
-          </ul>
-          <a href="#" class="btn btn-primary">View Details</a>
-        </div>
+  <section class="section container">
+    <div class="filters-toolbar">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search events…" data-search-input />
       </div>
-
-      <!-- Event 3 -->
-      <div class="event-card" data-category="Corporate">
-        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800" alt="Corporate">
-        <div class="event-content">
-          <span class="event-category">Corporate</span>
-          <h3>Business Leadership Summit</h3>
-          <p>Networking sessions, keynote speakers and executive workshops.</p>
-          <ul>
-            <li>📍 Chattogram</li>
-            <li>📅 5 August 2026</li>
-            <li>👥 300 Attendees</li>
-            <li>💰 ৳120,000</li>
-          </ul>
-          <a href="#" class="btn btn-primary">View Details</a>
-        </div>
-      </div>
-
-      <!-- Event 4 -->
-      <div class="event-card" data-category="Seminar">
-        <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=800" alt="Seminar">
-        <div class="event-content">
-          <span class="event-category">Seminar</span>
-          <h3>AI & Technology Seminar</h3>
-          <p>Explore future trends in AI, robotics and software innovation.</p>
-          <ul>
-            <li>📍 Sylhet</li>
-            <li>📅 12 August 2026</li>
-            <li>👥 250 Attendees</li>
-            <li>💰 ৳35,000</li>
-          </ul>
-          <a href="#" class="btn btn-primary">View Details</a>
-        </div>
-      </div>
-
-      <!-- Event 5 -->
-      <div class="event-card" data-category="Concert">
-        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800" alt="Concert">
-        <div class="event-content">
-          <span class="event-category">Concert</span>
-          <h3>Summer Music Festival</h3>
-          <p>Featuring top artists, food courts and spectacular stage lighting.</p>
-          <ul>
-            <li>📍 Cox's Bazar</li>
-            <li>📅 20 August 2026</li>
-            <li>👥 3000 Audience</li>
-            <li>💰 ৳180,000</li>
-          </ul>
-          <a href="#" class="btn btn-primary">View Details</a>
-        </div>
-      </div>
-
-      <!-- Event 6 -->
-      <div class="event-card" data-category="Anniversary">
-        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800" alt="Anniversary">
-        <div class="event-content">
-          <span class="event-category">Anniversary</span>
-          <h3>Golden Anniversary Celebration</h3>
-          <p>Elegant family gathering with live entertainment and fine dining.</p>
-          <ul>
-            <li>📍 Dhaka</li>
-            <li>📅 25 August 2026</li>
-            <li>👥 200 Guests</li>
-            <li>💰 ৳75,000</li>
-          </ul>
-          <a href="#" class="btn btn-primary">View Details</a>
-        </div>
-      </div>
-
-      <!-- Event 7 -->
-      <div class="event-card" data-category="Corporate">
-        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800" alt="Expo">
-        <div class="event-content">
-          <span class="event-category">Corporate</span>
-          <h3>Startup Innovation Expo</h3>
-          <p>Showcase products, meet investors and build valuable partnerships.</p>
-          <ul>
-            <li>📍 Khulna</li>
-            <li>📅 3 September 2026</li>
-            <li>👥 500 Attendees</li>
-            <li>💰 ৳150,000</li>
-          </ul>
-          <a href="#" class="btn btn-primary">View Details</a>
-        </div>
-      </div>
-
-      <!-- Event 8 -->
-      <div class="event-card" data-category="Seminar">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" alt="Workshop">
-        <div class="event-content">
-          <span class="event-category">Workshop</span>
-          <h3>Digital Marketing Masterclass</h3>
-          <p>Hands-on training on SEO, social media growth and online branding.</p>
-          <ul>
-            <li>📍 Sylhet</li>
-            <li>📅 10 September 2026</li>
-            <li>👥 150 Participants</li>
-            <li>💰 ৳28,000</li>
-          </ul>
-          <a href="#" class="btn btn-primary">View Details</a>
-        </div>
-      </div>
-
+      <button class="mobile-filter-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+        Filters
+      </button>
     </div>
 
+    <div class="listing-layout">
+      <!-- Desktop sidebar -->
+      <aside class="filter-sidebar card">
+        <div class="filter-sidebar-head">
+          <h3>Filters</h3>
+          <button class="filter-reset">Reset All</button>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-group-label">Category</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-category value="Wedding"> Wedding</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-category value="Birthday"> Birthday</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-category value="Corporate"> Corporate</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-category value="Seminar"> Seminar</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-category value="Concert"> Concert</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-category value="Anniversary"> Anniversary</label>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-group-label">Price Range (৳)</label>
+          <div class="price-range-inputs">
+            <input type="number" placeholder="Min" data-price-min>
+            <span>–</span>
+            <input type="number" placeholder="Max" data-price-max>
+          </div>
+        </div>
+
+        <div class="filter-group" style="margin-bottom:0">
+          <label class="filter-group-label">Minimum Rating</label>
+          <div class="star-filter">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+      </aside>
+
+      <div>
+        <p class="results-count"><strong data-results-count>8</strong> events found</p>
+
+        <div class="listing-grid events-grid">
+
+          <div class="event-card card card-hover" data-search-item="dream wedding" data-category="Wedding">
+            <div class="event-card-img">
+              <a href="event-details.html"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop" alt="Dream Wedding decor"></a>
+              <span class="badge badge-featured card-badge-top-left">Featured</span>
+              <button class="fav-btn" data-id="evt-1" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Dream Wedding</h3>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><strong>4.8</strong> (100)</div>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Dhaka, Bangladesh</div>
+              <div class="event-card-footer">
+                <a href="book-now.html" class="btn btn-primary">Book Now</a>
+                <span class="price-tag">৳4,999</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card card card-hover" data-search-item="corporate meet 2026" data-category="Corporate">
+            <div class="event-card-img">
+              <a href="event-details.html"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop" alt="Corporate Meet 2026 conference hall"></a>
+              <button class="fav-btn" data-id="evt-2" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Corporate Meet 2026</h3>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><strong>4.6</strong> (98)</div>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Dhaka, Bangladesh</div>
+              <div class="event-card-footer">
+                <a href="book-now.html" class="btn btn-primary">Book Now</a>
+                <span class="price-tag">৳1,199</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card card card-hover" data-search-item="rock concert live" data-category="Concert">
+            <div class="event-card-img">
+              <a href="event-details.html"><img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=800&auto=format&fit=crop" alt="Rock Concert Live stage lighting"></a>
+              <button class="fav-btn" data-id="evt-3" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Rock Concert Live</h3>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><strong>4.7</strong> (78)</div>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Dhaka, Bangladesh</div>
+              <div class="event-card-footer">
+                <a href="book-now.html" class="btn btn-primary">Book Now</a>
+                <span class="price-tag">৳699</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card card card-hover" data-search-item="birthday party" data-category="Birthday">
+            <div class="event-card-img">
+              <a href="event-details.html"><img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=800&auto=format&fit=crop" alt="Birthday Party celebration"></a>
+              <button class="fav-btn" data-id="evt-4" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Birthday Party</h3>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><strong>4.5</strong> (64)</div>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Chattogram, BD</div>
+              <div class="event-card-footer">
+                <a href="book-now.html" class="btn btn-primary">Book Now</a>
+                <span class="price-tag">৳499</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card card card-hover" data-search-item="garden anniversary gala" data-category="Anniversary">
+            <div class="event-card-img">
+              <a href="event-details.html"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop" alt="Garden Anniversary Gala setup"></a>
+              <button class="fav-btn" data-id="evt-5" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Garden Anniversary Gala</h3>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><strong>4.9</strong> (52)</div>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Sylhet, Bangladesh</div>
+              <div class="event-card-footer">
+                <a href="book-now.html" class="btn btn-primary">Book Now</a>
+                <span class="price-tag">৳1,899</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card card card-hover" data-search-item="tech summit 2026" data-category="Corporate">
+            <div class="event-card-img">
+              <a href="book-now.html"><img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=800&auto=format&fit=crop" alt="Tech Summit 2026 stage"></a>
+              <button class="fav-btn" data-id="evt-6" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Tech Summit 2026</h3>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Dhaka, Bangladesh</div>
+              <div class="event-card-footer">
+                <a href="book-now.html" class="btn btn-primary">Book Now</a>
+                <span class="price-tag">৳2,499</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card card card-hover" data-search-item="summer seminar series" data-category="Seminar">
+            <div class="event-card-img">
+              <a href="event-details.html"><img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=800&auto=format&fit=crop" alt="Summer Seminar Series audience"></a>
+              <button class="fav-btn" data-id="evt-7" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Summer Seminar Series</h3>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><strong>4.3</strong> (29)</div>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Rajshahi, Bangladesh</div>
+              <div class="event-card-footer">
+                <a href="book-now.html" class="btn btn-primary">Book Now</a>
+                <span class="price-tag">৳899</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card card card-hover" data-search-item="kids birthday fiesta" data-category="Birthday">
+            <div class="event-card-img">
+              <a href="event-details.html"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=800&auto=format&fit=crop" alt="Kids Birthday Fiesta decorations"></a>
+              <button class="fav-btn" data-id="evt-8" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Kids Birthday Fiesta</h3>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><strong>4.6</strong> (88)</div>
+              <div class="event-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Dhaka, Bangladesh</div>
+              <div class="event-card-footer">
+                <a href="book-now.html" class="btn btn-primary">Book Now</a>
+                <span class="price-tag">৳399</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile filter drawer -->
+  <div class="mobile-drawer-overlay mobile-filter-overlay">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-head">
+        <h3 style="font-family:var(--font-display);font-weight:700;font-size:1.1rem">Filters</h3>
+        <button class="filter-drawer-close icon-btn" style="display:flex" aria-label="Close filters">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <aside class="filter-sidebar mobile-only" style="border:none;box-shadow:none;padding:0">
+        <div class="filter-group">
+          <label class="filter-group-label">Category</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-category value="Wedding"> Wedding</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-category value="Birthday"> Birthday</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-category value="Corporate"> Corporate</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-category value="Seminar"> Seminar</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-category value="Concert"> Concert</label>
+          <label class="filter-checkbox"><input type="checkbox" data-filter-category value="Anniversary"> Anniversary</label>
+        </div>
+      </aside>
+    </div>
   </div>
-  <footer class="site-footer">
+  <!-- ============ FOOTER ============ -->
+<footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
@@ -253,15 +341,27 @@
     </div>
 
     <div class="footer-bottom">
-      <p class="footer-bottom-text">© 2026 Celevora. All rights reserved.</p>
-      <div class="payment-icons">
-        <span>VISA</span><span>Mastercard</span><span>bKash</span><span>Nagad</span>
-      </div>
+    <div>
+        <p class="footer-bottom-text">
+            © 2026 DEVNTRIC. All Rights Reserved.
+        </p>
+
+        <p class="developer-credit">
+            Developed by Ahnaf Mohsin
+        </p>
     </div>
+
+    <div class="payment-icons">
+        <span>VISA</span>
+        <span>Mastercard</span>
+        <span>bKash</span>
+        <span>Nagad</span>
+    </div>
+</div>
   </div>
 </footer>
 
-</section>
-<script src="assets/js/main.js"></script>
+  
+  <script src="assets/js/main.js"></script>
 
 </main>
