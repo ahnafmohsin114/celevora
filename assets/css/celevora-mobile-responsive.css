@@ -1100,3 +1100,859 @@ img {
     padding: 0 0.85rem;
   }
 }
+/* ============================================================
+   0. GLOBAL BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { overflow-x: hidden; scroll-behavior: smooth; }
+
+body {
+  overflow-x: hidden;
+  min-width: 320px;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, video, iframe, svg { max-width: 100%; height: auto; display: block; }
+
+/* Custom cursor off on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  body { cursor: auto !important; }
+  .rolling-cursor, .custom-cursor, .cursor-dot { display: none !important; }
+}
+
+/* ============================================================
+   1. CONTAINER
+   ============================================================ */
+@media (max-width: 480px) {
+  .container { padding-left: 1rem; padding-right: 1rem; }
+}
+@media (max-width: 360px) {
+  .container { padding-left: 0.85rem; padding-right: 0.85rem; }
+}
+
+/* ============================================================
+   2. NAVBAR / HEADER
+   ============================================================ */
+@media (max-width: 1023px) {
+  .site-header { height: auto; }
+  .navbar { height: 60px; padding: 0 1rem; }
+  .nav-links { display: none !important; }
+  .icon-btn { display: none !important; }
+  .nav-vendor-btn { display: none !important; }
+  .menu-toggle { display: flex !important; }
+
+  /* Hide desktop auth buttons */
+  .nav-right .btn-outline,
+  .nav-right .btn-primary { display: none !important; }
+
+  /* Keep one small CTA */
+  .nav-right .btn-primary:last-child { display: inline-flex !important; padding: 0.45rem 1rem; font-size: 0.8rem; }
+
+  .logo-text { font-size: 1.1rem; }
+  .logo-mark { width: 30px; height: 30px; font-size: 0.85rem; }
+}
+
+@media (max-width: 480px) {
+  .navbar { padding: 0 0.85rem; }
+  .nav-right .btn-primary:last-child { display: none !important; }
+}
+
+/* Mobile drawer */
+.mobile-drawer { overflow-y: auto; }
+.mobile-drawer nav a { font-size: 1rem; padding: 0.85rem 0.75rem; }
+
+/* ============================================================
+   3. HERO (Index page)
+   ============================================================ */
+@media (max-width: 1023px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    padding: 2.5rem 0;
+    gap: 2rem;
+    text-align: center;
+  }
+  .hero-sub { margin-left: auto; margin-right: auto; max-width: 100%; }
+  .popular-searches { justify-content: center; }
+  .hero-visual { max-width: 320px; margin: 0 auto; }
+  .hero-stat-badge { left: 50%; transform: translateX(-50%); top: -1rem; white-space: nowrap; }
+}
+
+@media (max-width: 640px) {
+  .hero-heading { font-size: 2.1rem; }
+  .hero-visual { max-width: 260px; }
+  .search-bar { border-radius: var(--radius-lg); padding: 0.5rem; }
+  .hero-stat-badge {
+    position: static;
+    transform: none;
+    display: inline-flex;
+    margin: 1rem auto 0;
+    width: fit-content;
+  }
+  .dot-grid-1 { left: -0.5rem; }
+  .dot-grid-2 { right: 0; }
+}
+
+@media (max-width: 480px) {
+  .hero-heading { font-size: 1.85rem; }
+  .hero-grid { padding: 1.75rem 0; }
+  .hero-sub { font-size: 0.9rem; }
+  .search-field input, .search-field select { font-size: 0.85rem; }
+  /* Stack search fields vertically */
+  .search-bar { flex-direction: column; }
+  .search-field { max-width: 100% !important; }
+  .search-divider { display: none; }
+}
+
+/* ============================================================
+   4. SECTION HEADS + GENERAL SECTION SPACING
+   ============================================================ */
+@media (max-width: 640px) {
+  .section { padding: 2.25rem 0; }
+  .section-head { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .section-title { font-size: 1.35rem; }
+}
+
+@media (max-width: 480px) {
+  .section { padding: 1.75rem 0; }
+}
+
+/* ============================================================
+   5. CATEGORIES GRID
+   ============================================================ */
+@media (max-width: 1023px) {
+  .categories-grid { grid-template-columns: repeat(4, 1fr) !important; }
+}
+@media (max-width: 640px) {
+  .categories-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 0.75rem; }
+}
+@media (max-width: 480px) {
+  .categories-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 0.65rem; }
+  .category-card { padding: 1.1rem 0.5rem; }
+  .category-icon { width: 40px; height: 40px; }
+  .category-name { font-size: 0.78rem; }
+  .category-count { font-size: 0.68rem; }
+}
+
+/* ============================================================
+   6. EVENT CARDS (scroll row)
+   ============================================================ */
+@media (max-width: 640px) {
+  .event-card { width: 230px; }
+  .event-card-title { font-size: 0.9rem; }
+  .event-meta-row { font-size: 0.78rem; }
+  .price-tag { font-size: 0.9rem; }
+}
+@media (max-width: 480px) {
+  .event-card { width: 210px; }
+}
+
+/* ============================================================
+   7. VENDOR CARDS GRID
+   ============================================================ */
+@media (max-width: 640px) {
+  .vendors-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 0.75rem; }
+}
+@media (max-width: 480px) {
+  .vendors-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 0.65rem; }
+  .vendor-card-name { font-size: 0.8rem; }
+  .vendor-card-meta { font-size: 0.7rem; }
+}
+
+/* ============================================================
+   8. VENUES GRID
+   ============================================================ */
+@media (max-width: 640px) {
+  .venues-grid { grid-template-columns: 1fr !important; gap: 1.1rem; }
+  .venues-section { padding: 40px 0 70px; }
+  .venue-card-img { aspect-ratio: 16/9; }
+}
+
+/* ============================================================
+   9. WHY CHOOSE US
+   ============================================================ */
+@media (max-width: 640px) {
+  .why-choose { padding: 1.75rem 0; }
+  .why-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem; }
+  .why-item { flex-direction: column !important; text-align: center; }
+}
+@media (max-width: 480px) {
+  .why-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ============================================================
+   10. TESTIMONIALS
+   ============================================================ */
+@media (max-width: 767px) {
+  .testimonials-grid { grid-template-columns: 1fr !important; gap: 1.1rem; }
+  .testimonial-text { font-size: 0.875rem; }
+}
+
+/* ============================================================
+   11. NEWSLETTER BOX
+   ============================================================ */
+@media (max-width: 640px) {
+  .newsletter-box { padding: 2.25rem 1.1rem; border-radius: var(--radius-lg); }
+  .newsletter-box h2 { font-size: 1.4rem; }
+  .newsletter-box p { font-size: 0.85rem; }
+  .newsletter-form { flex-direction: column; }
+}
+
+/* ============================================================
+   12. PAGE HEADER (inner pages breadcrumb banner)
+   ============================================================ */
+@media (max-width: 640px) {
+  .page-header { padding: 1.75rem 0; }
+  .page-title { font-size: 1.55rem; }
+  .page-desc { font-size: 0.85rem; }
+  .breadcrumb { font-size: 0.78rem; flex-wrap: wrap; }
+}
+@media (max-width: 480px) {
+  .page-title { font-size: 1.35rem; }
+}
+
+/* ============================================================
+   13. LISTING LAYOUT + FILTER SIDEBAR
+   ============================================================ */
+@media (max-width: 1023px) {
+  .listing-layout { grid-template-columns: 1fr !important; }
+  /* Sidebar hidden; toggled via .is-open with JS */
+  .filter-sidebar { display: none !important; }
+  .filter-sidebar.is-open {
+    display: block !important;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    border-radius: 0;
+    overflow-y: auto;
+    background: var(--card);
+    padding: 1.5rem;
+    max-width: 340px;
+    box-shadow: 4px 0 32px rgba(0,0,0,0.2);
+  }
+  /* Mobile filter button visible */
+  .mobile-filter-btn { display: flex !important; }
+}
+@media (min-width: 1024px) {
+  .filter-sidebar { display: block !important; }
+  .mobile-filter-btn { display: none !important; }
+}
+
+@media (max-width: 640px) {
+  .listing-grid { grid-template-columns: 1fr !important; gap: 1rem; }
+  .listing-grid.events-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .listing-grid.vendors-grid-cols { grid-template-columns: repeat(2, 1fr) !important; }
+  .filters-toolbar { gap: 0.5rem; }
+  .results-count { font-size: 0.8rem; }
+  .pagination { gap: 0.35rem; flex-wrap: wrap; }
+  .page-btn { width: 2.2rem; height: 2.2rem; font-size: 0.8rem; }
+}
+@media (max-width: 480px) {
+  .listing-grid.events-grid { grid-template-columns: 1fr !important; }
+  .listing-grid.vendors-grid-cols { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
+/* ============================================================
+   14. DETAIL PAGES (Event / Vendor / Venue details)
+   ============================================================ */
+@media (max-width: 1023px) {
+  .detail-layout { grid-template-columns: 1fr !important; }
+  .booking-card { position: static !important; }
+}
+
+@media (max-width: 640px) {
+  /* Hero banner image */
+  .container > div[style*="aspect-ratio:16/7"] { aspect-ratio: 16/9 !important; border-radius: 1rem !important; }
+
+  .detail-gallery { grid-template-columns: 1fr !important; border-radius: var(--radius-lg); }
+  .detail-gallery-main { grid-column: span 1 !important; aspect-ratio: 16/9; }
+  .detail-gallery-side { display: none !important; }
+
+  .detail-title { font-size: 1.35rem; }
+  .detail-head { flex-direction: column; gap: 0.75rem; }
+  .detail-actions { align-self: flex-start; }
+  .detail-meta-pills { gap: 0.5rem; font-size: 0.8rem; }
+  .detail-subheading { font-size: 1.1rem; margin-top: 1.75rem; }
+  .detail-body-text { font-size: 0.9rem; }
+
+  /* Review card */
+  .review-card { flex-direction: column; gap: 0.75rem; }
+  .review-card img { width: 38px; height: 38px; }
+
+  /* What's included grid */
+  .detail-gallery-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
+@media (max-width: 480px) {
+  .detail-gallery-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ============================================================
+   15. PACKAGES GRID
+   ============================================================ */
+@media (max-width: 767px) {
+  .packages-grid { grid-template-columns: 1fr !important; gap: 1rem; }
+}
+
+/* ============================================================
+   16. BOOKING SIDEBAR CARD
+   ============================================================ */
+@media (max-width: 640px) {
+  .booking-card { padding: 1.25rem; }
+  .booking-card-price { font-size: 1.4rem; }
+}
+
+/* ============================================================
+   17. BOOK NOW PAGE (booking-hero + booking-section)
+   ============================================================ */
+.booking-hero {
+  padding: 4rem 0 2.5rem;
+  text-align: center;
+  background: var(--gradient-soft);
+}
+.booking-hero h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: var(--fg);
+  margin-bottom: 0.5rem;
+}
+.booking-hero p { color: var(--muted-fg); }
+.booking-section { padding: 2rem 0 5rem; }
+.booking-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+}
+.booking-form .form-group {
+  margin-bottom: 1.1rem;
+}
+.booking-form label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--fg);
+}
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 0.7rem 1rem;
+  font-size: 0.875rem;
+  background: var(--card);
+  color: var(--fg);
+}
+.booking-form textarea { border-radius: var(--radius-md); resize: vertical; }
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus { outline: 2px solid var(--violet); }
+.booking-btn { width: 100%; padding: 0.85rem; font-size: 1rem; }
+
+@media (max-width: 640px) {
+  .booking-hero { padding: 2.5rem 0 1.75rem; }
+  .booking-hero h1 { font-size: 1.85rem; }
+  .booking-section { padding: 1.5rem 0 4rem; }
+  .booking-form .form-row { grid-template-columns: 1fr; }
+  .booking-card { padding: 1.25rem; }
+}
+
+/* ============================================================
+   18. CHECKOUT / BOOKING FORM (checkout.html)
+   ============================================================ */
+@media (max-width: 1023px) {
+  .checkout-layout { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 640px) {
+  .form-control { height: 2.5rem; font-size: 0.85rem; }
+  .payment-method { padding: 0.7rem 0.85rem; }
+  .payment-method-name { font-size: 0.82rem; }
+  .form-grid-2 { grid-template-columns: 1fr !important; }
+}
+
+/* ============================================================
+   19. AUTH PAGES — Login & Register
+   ============================================================ */
+@media (max-width: 1023px) {
+  .login-wrapper,
+  .register-wrapper { grid-template-columns: 1fr !important; gap: 2rem; }
+  .login-left, .register-left { text-align: center; }
+  .login-left p, .register-left p { margin: 0 auto 1.5rem; }
+  .login-features, .register-benefits { align-items: center; }
+}
+@media (max-width: 640px) {
+  .login-section, .register-section { padding: 2.5rem 0; }
+  .login-card, .register-card { padding: 1.5rem 1.1rem; border-radius: 20px; }
+  .login-left h1, .register-left h1 { font-size: 2rem; }
+  .login-card h2, .register-card h2 { font-size: 1.5rem; }
+  .login-options { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .auth-card { padding: 1.5rem 1.1rem; }
+  .auth-title { font-size: 1.35rem; }
+  .role-toggle button { font-size: 0.78rem; padding: 0.45rem; }
+}
+@media (max-width: 480px) {
+  .login-left h1, .register-left h1 { font-size: 1.75rem; }
+  .login-btn, .register-btn { padding: 12px; font-size: 0.9rem; }
+  .form-group input { padding: 12px 14px; }
+  .social-btn { font-size: 0.85rem; padding: 12px; }
+}
+
+/* ============================================================
+   20. ABOUT PAGE
+   ============================================================ */
+@media (max-width: 1023px) {
+  .about-grid { grid-template-columns: 1fr !important; gap: 2.5rem; text-align: center; }
+  .about-grid p { margin-left: auto; margin-right: auto; }
+  .about-image { margin: 0 auto; height: 280px; font-size: 6rem; max-width: 100%; border-radius: 20px; }
+}
+@media (max-width: 767px) {
+  .about-hero { padding: 80px 0 60px; }
+  .about-hero h1 { font-size: 2.2rem; }
+  .about-hero p { font-size: 1rem; }
+  .about-story, .about-stats, .mission-section, .why-us { padding: 60px 0; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem; }
+  .stat-card { padding: 25px 15px; }
+  .stat-card h3 { font-size: 2rem; }
+  .why-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem; }
+  .why-card { padding: 25px 18px; }
+  .about-image { height: 220px; font-size: 4.5rem; }
+  .about-grid h2, .mission-section h2, .why-us h2 { font-size: 1.75rem; }
+}
+@media (max-width: 480px) {
+  .about-hero h1 { font-size: 1.8rem; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .why-grid { grid-template-columns: 1fr !important; }
+  .about-image { height: 180px; font-size: 3.5rem; }
+  .mission-text { font-size: 0.95rem; }
+  .about-stat .num { font-size: 1.5rem; }
+  .about-stat { padding: 1.1rem 0.75rem; }
+}
+
+/* ============================================================
+   21. FAVOURITES PAGE
+   ============================================================ */
+@media (max-width: 1023px) {
+  .fav-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 1.1rem; }
+}
+@media (max-width: 640px) {
+  .fav-grid { grid-template-columns: 1fr !important; gap: 1rem; }
+  .fav-card img { height: 200px; }
+  .fav-content { padding: 18px; }
+  .fav-actions { flex-direction: column; gap: 0.5rem; }
+  .fav-actions .btn { width: 100%; justify-content: center; }
+  .fav-empty { padding: 60px 1.25rem; }
+  .fav-empty h3 { font-size: 1.4rem; }
+}
+@media (max-width: 480px) {
+  .page-header { padding: 70px 0 40px; }
+}
+
+/* ============================================================
+   22. CART PAGE
+   ============================================================ */
+@media (max-width: 1023px) {
+  .cart-grid { grid-template-columns: 1fr !important; gap: 1.5rem; }
+  .cart-summary-card { position: static !important; }
+}
+@media (max-width: 640px) {
+  .cart-section { padding: 40px 0 70px; }
+  .cart-item { flex-direction: column !important; padding: 1rem; gap: 0.85rem; }
+  .cart-item img { width: 100% !important; height: 200px; border-radius: 12px; }
+  .cart-item-content h3 { font-size: 1rem; }
+  .cart-item-meta { gap: 0.75rem; font-size: 0.82rem; }
+  .cart-item-price { font-size: 1.05rem; }
+  .cart-summary-card { padding: 1.25rem; border-radius: 20px; }
+  .cart-summary-card h3 { font-size: 1.2rem; }
+  .cart-empty { padding: 50px 1.25rem; }
+  .cart-empty h3 { font-size: 1.4rem; }
+}
+
+/* ============================================================
+   23. CONTACT PAGE
+   ============================================================ */
+@media (max-width: 1023px) {
+  .contact-grid { grid-template-columns: 1fr !important; gap: 1.75rem; }
+}
+@media (max-width: 640px) {
+  .contact-info-card { flex-direction: column !important; align-items: flex-start !important; gap: 0.75rem; padding: 1rem; }
+  .contact-info-icon { width: 40px; height: 40px; }
+}
+
+/* ============================================================
+   24. FAQ PAGE
+   ============================================================ */
+@media (max-width: 640px) {
+  .faq-question { font-size: 0.88rem; padding: 1rem 0.1rem; }
+  .faq-answer-inner { font-size: 0.84rem; }
+  .prose-content h2 { font-size: 1.2rem; }
+  .prose-content p, .prose-content li { font-size: 0.875rem; }
+}
+
+/* ============================================================
+   25. PRICING PAGE
+   ============================================================ */
+@media (max-width: 767px) {
+  .pricing-grid { grid-template-columns: 1fr !important; gap: 1.1rem; }
+  .pricing-card.featured { transform: none !important; }
+  .pricing-amount { font-size: 2rem; }
+}
+
+/* ============================================================
+   26. TERMS / PRIVACY / PROSE PAGES
+   ============================================================ */
+@media (max-width: 640px) {
+  .prose-content { padding: 0 0.25rem; }
+  .prose-content h2 { font-size: 1.15rem; margin-top: 1.5rem; }
+  .prose-content p, .prose-content li { font-size: 0.875rem; line-height: 1.7; }
+}
+
+/* ============================================================
+   27. BECOME VENDOR PAGE
+   ============================================================ */
+.vendor-register-hero {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  background: var(--gradient-soft);
+}
+.vendor-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.benefit-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-card);
+}
+.benefit-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--gradient-soft);
+  color: var(--violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefit-card h4 { font-family: var(--font-display); font-weight: 600; font-size: 0.95rem; margin-bottom: 0.35rem; }
+.benefit-card p { font-size: 0.85rem; color: var(--muted-fg); line-height: 1.6; margin: 0; }
+.vendor-register-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.step-card {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+}
+.step-num {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gradient);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+.step-card h4 { font-family: var(--font-display); font-weight: 600; margin-bottom: 0.5rem; }
+.step-card p { font-size: 0.85rem; color: var(--muted-fg); line-height: 1.6; margin: 0; }
+.vendor-register-form {
+  max-width: 680px;
+  margin: 0 auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+}
+.vendor-register-form h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.vendor-register-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+}
+.vendor-register-form .form-group { margin-bottom: 1.1rem; }
+.vendor-register-form label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.vendor-register-form input,
+.vendor-register-form select,
+.vendor-register-form textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 0.7rem 1rem;
+  font-size: 0.875rem;
+  background: var(--card);
+  color: var(--fg);
+}
+.vendor-register-form textarea { border-radius: var(--radius-md); resize: vertical; min-height: 120px; }
+.vendor-register-form input:focus,
+.vendor-register-form select:focus,
+.vendor-register-form textarea:focus { outline: 2px solid var(--violet); }
+.section-desc { color: var(--muted-fg); font-size: 0.9rem; margin-top: 0.4rem; }
+
+@media (max-width: 1023px) {
+  .vendor-benefits { grid-template-columns: repeat(2, 1fr); }
+  .vendor-register-steps { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 767px) {
+  .vendor-benefits { grid-template-columns: 1fr; }
+  .vendor-register-steps { grid-template-columns: 1fr; }
+  .vendor-register-hero { padding: 3rem 0 2rem; }
+}
+@media (max-width: 640px) {
+  .vendor-register-form { padding: 1.5rem 1.1rem; border-radius: var(--radius-lg); }
+  .vendor-register-form .form-row { grid-template-columns: 1fr; }
+  .benefit-card { flex-direction: column; }
+}
+
+/* ============================================================
+   28. VENDOR DASHBOARD
+   ============================================================ */
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+.dashboard-sidebar {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1rem;
+  position: sticky;
+  top: 5rem;
+}
+.dashboard-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.dashboard-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(26,21,48,0.75);
+  transition: all 0.18s;
+}
+.dashboard-nav a:hover { background: var(--muted); color: var(--violet); }
+.dashboard-nav a.active { background: var(--gradient-soft); color: var(--violet); font-weight: 600; }
+.dash-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.dash-stat {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-card);
+}
+.dash-stat-label { font-size: 0.78rem; color: var(--muted-fg); margin-bottom: 0.4rem; }
+.dash-stat-value { font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; color: var(--fg); }
+.dash-stat-change { font-size: 0.75rem; color: #16a34a; margin-top: 0.3rem; }
+.dashboard-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-card);
+}
+.dashboard-card h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.dash-table { width: 100%; border-collapse: collapse; min-width: 560px; font-size: 0.875rem; }
+.dash-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: var(--muted);
+  color: var(--muted-fg);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid var(--border);
+}
+.dash-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+.dash-table tr:last-child td { border-bottom: none; }
+.dash-table tbody tr:hover { background: rgba(109,40,217,0.03); }
+.badge-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.badge-status.confirmed { background: #dcfce7; color: #15803d; }
+.badge-status.pending { background: #fef3c7; color: #b45309; }
+.badge-status.cancelled { background: #fee2e2; color: #dc2626; }
+
+@media (max-width: 1023px) {
+  .dashboard-layout { grid-template-columns: 1fr !important; }
+  .dashboard-sidebar { position: static; }
+  /* Collapse sidebar to horizontal tab bar on tablet */
+  .dashboard-nav { flex-direction: row; flex-wrap: wrap; gap: 0.35rem; }
+  .dashboard-nav a { font-size: 0.8rem; padding: 0.5rem 0.75rem; }
+}
+@media (max-width: 767px) {
+  .dash-stat-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 640px) {
+  .dash-stat-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .dash-stat-value { font-size: 1.3rem; }
+  .dashboard-card { padding: 1rem; }
+  /* Quick actions + reviews side-by-side → stack */
+  .dashboard-card ~ div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  /* Table horizontal scroll */
+  .dashboard-card div[style*="overflow-x"] { overflow-x: auto !important; -webkit-overflow-scrolling: touch; }
+  /* Nav sidebar: compact icons only */
+  .dashboard-nav a span { display: none; }
+}
+@media (max-width: 480px) {
+  .dash-stat-grid { gap: 0.65rem; }
+  .dash-stat-value { font-size: 1.2rem; }
+  .dashboard-nav a svg { width: 20px; height: 20px; }
+}
+
+/* ============================================================
+   29. FOOTER
+   ============================================================ */
+@media (max-width: 1023px) {
+  .footer-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 2rem; }
+  .footer-brand { grid-column: span 2; }
+}
+@media (max-width: 640px) {
+  .site-footer { padding: 2.5rem 0 0; }
+  .footer-grid { grid-template-columns: 1fr !important; gap: 1.5rem; }
+  .footer-brand { grid-column: span 1; }
+  .footer-brand p { font-size: 0.82rem; }
+  .footer-col h4 { font-size: 0.875rem; }
+  .footer-col a { font-size: 0.82rem; }
+  .footer-bottom { padding: 1.25rem 0; gap: 0.75rem; flex-direction: column; text-align: center; }
+  .footer-bottom-text { font-size: 0.7rem; }
+  .payment-icons span { font-size: 0.65rem; padding: 0.25rem 0.5rem; }
+  .developer-credit { font-size: 0.7rem; color: rgba(207,201,224,0.6); margin-top: 0.2rem; }
+}
+@media (max-width: 480px) {
+  .footer-socials a { width: 32px; height: 32px; }
+  .footer-socials svg { width: 14px; height: 14px; }
+}
+
+/* ============================================================
+   30. BUTTONS — prevent overflow on tiny screens
+   ============================================================ */
+@media (max-width: 480px) {
+  .btn { font-size: 0.85rem; padding: 0.65rem 1.25rem; }
+  .btn-lg { padding: 0.75rem 1.5rem; font-size: 0.9rem; }
+  .btn-sm { padding: 0.45rem 1rem; font-size: 0.8rem; }
+}
+
+/* ============================================================
+   31. NAV VENDOR BUTTON (visible only on desktop)
+   ============================================================ */
+@media (max-width: 1023px) {
+  .nav-vendor-btn { display: none !important; }
+}
+
+/* ============================================================
+   32. CART BADGE COUNTER
+   ============================================================ */
+.cart-icon-wrap { position: relative; }
+.cart-count-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: var(--magenta);
+  color: #fff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============================================================
+   33. GENERAL INLINE STYLE OVERRIDES
+   (Some pages use inline grids that need to collapse)
+   ============================================================ */
+@media (max-width: 767px) {
+  /* Dashboard quick-actions + reviews inline grid */
+  div[style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 640px) {
+  /* "What's included" 2-col grid inside detail pages */
+  div[style*="grid-template-columns:repeat(2,1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+  /* Vendor register form row */
+  .form-row {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ============================================================
+   34. REDUCED MOTION RESPECT
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   35. FOCUS VISIBLE (keyboard nav accessibility)
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 2px;
+  border-radius: 4px;
+}

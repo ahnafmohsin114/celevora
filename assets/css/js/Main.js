@@ -313,9 +313,3 @@ document.addEventListener("DOMContentLoaded", function () {
     if (href === currentPath) link.classList.add("active");
   });
 });
-const rollingCursor = document.querySelector(".rolling-cursor");
-
-document.addEventListener("mousemove", (e) => {
-    rollingCursor.style.left = e.clientX + "px";
-    rollingCursor.style.top = e.clientY + "px";
-});
